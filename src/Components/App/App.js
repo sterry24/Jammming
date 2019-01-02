@@ -66,6 +66,10 @@ class App extends Component {
     this.setState({playlistTracks:tracks});
   }
 
+  componentDidMount(){
+    Spotify.getAccessToken();
+  }
+
   render() {
     return (
       <div>
